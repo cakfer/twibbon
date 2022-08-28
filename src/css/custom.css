@@ -113,3 +113,22 @@ img,canvas {
   width: 100%;
   height: auto;
 }
+
+input[type="file"] {
+  display: none;
+  }
+
+label {
+  font-family: sans-serif;
+  color: cornflowerblue;
+  }
+
+#filename {
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 0px;
+  }
+
+label:hover {
+  background-color: yellow;
+  }
