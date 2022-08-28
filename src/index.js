@@ -10,11 +10,17 @@ const externalHTML = `
 <p>
 <img id="preview" src="src/img/image.png"/>
 <img id="twibbon" src="src/img/twibbon.png" style="display: none"/>
-<canvas id="twibbonbaker" style="width: 300px; height: 300px; display: none"></canvas>
+<canvas id="cakfer" style="width: 300px; height: 300px; display: none"></canvas>
 </p>
 
-<p>The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.</p>
+<p>
+<input type="text" id="filename" autocomplete="off" readonly="" placeholder="Tidak ada file yang diunggah.">
+<br />
+<label for="fileInput" class="custom-file-upload">
+<i class="text-button"></i> <i class="far fa-images"></i> UNGGAH GAMBAR BARU
+<input id="fileInput" type="file" />
+</label>
+</p>
 
 <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
