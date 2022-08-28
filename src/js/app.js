@@ -27,9 +27,9 @@ function drawImage() {
 
   console.log("Drew!");
 
-  $('#dpwload').css('display', 'none');
-  $('#dpwload2').css('display', 'inline-block');
-  $('#dpwload2').attr('href', hasil);
+  $('#klik').css('display', 'none');
+  $('#unduh').css('display', 'inline-block');
+  $('#unduh').attr('href', hasil);
 }
 
 $("#fileInput").change(function() {
