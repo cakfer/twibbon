@@ -14,7 +14,7 @@ function drawImage() {
   var picture = new Image();
   var twibbon = document.getElementById('twibbon');
   var picture = document.getElementById('preview');
-  var canvas = document.getElementById('twibbonbaker');
+  var canvas = document.getElementById('cakfer');
   var context = canvas.getContext('2d');
 
   canvas.width = 1080;
@@ -34,4 +34,11 @@ function drawImage() {
 
 $("#fileInput").change(function() {
   readURL(this);
+});
+
+// return chosen filename to additional input
+$('#fileInput').change(function(e) {
+  var filename = $('#fileInput').val().split('\\').pop();
+  $('#filename').val(filename);
+  $('#filename').focus();
 });
