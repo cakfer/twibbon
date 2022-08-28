@@ -22,13 +22,11 @@ const externalHTML = `
 </label>
 </p>
 
-<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.</p>
+<p>
+<a href="#" id="unduh" download="magg.netlify.app.png" style="display: none" class="button-3" role="button"><i class="fa fa-download"></i> UNDUH</a>
+<button id="klik" onclick="drawImage()" class="button-3" role="button"><i class="far fa-eye"></i> PRATINJAU</button> 
+<button id="cancel" onclick="location.reload()" class="button-4" role="button" style="color:red"><i class="fas fa-trash-alt"></i> HAPUS</button>
+</p>
 </article>
   
 <footer>
