@@ -2,6 +2,6 @@
 
 Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.
 
-#Demo
+# Demo
 
 ![Preview Twibbon](/img/preview.png)
