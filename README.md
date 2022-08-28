@@ -6,7 +6,7 @@ Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.
 
 1. Unggah gambar yang akan dijadikan Twibbon lalu klik 'Pratinjau'.
 2. Pastikan gambar memiliki ukuran.
-3. Klik tombol 'Unduh' untuk mengunduh hasil twibbon, jika link unduh mati klik tahan hasil twibbon tadi dan unduh.
+3. Klik tombol 'Unduh' untuk mengunduh hasil Twibbon, jika link unduh mati klik tahan hasil Twibbon tadi dan unduh.
 
 # Demo
 
