@@ -23,7 +23,7 @@
 }
 .form input{
   font-size: 17px;
-  padding: 0 16px;
+  padding: 0 17px;
   border: 1px solid #999;
 }
 .form input:focus{
@@ -31,6 +31,7 @@
 }
 .form input::placeholder{
   color: #999;
+  font-size: 17px;
 }
 .form button{
   color: #fff;
