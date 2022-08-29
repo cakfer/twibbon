@@ -1,24 +1,9 @@
-const wrapper = document.querySelector(".wrapper"),
-qrInput = wrapper.querySelector(".form input"),
-generateBtn = wrapper.querySelector(".form button"),
-qrImg = wrapper.querySelector(".qr-code img");
-let preValue;
+function htmlEncode (value){
+  return $('<div/>').text(value).html();
+}
 
-generateBtn.addEventListener("click", () => {
-    let qrValue = qrInput.value.trim();
-    if(!qrValue || preValue === qrValue) return;
-    preValue = qrValue;
-    generateBtn.innerText = "Creating QR Code...";
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
-    qrImg.addEventListener("load", () => {
-        wrapper.classList.add("active");
-        generateBtn.innerText = "Create QR Code";
-    });
-});
-
-qrInput.addEventListener("keyup", () => {
-    if(!qrInput.value.trim()) {
-        wrapper.classList.remove("active");
-        preValue = "";
-    }
+$(function() {
+  $("#generate").click(function() {
+    $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#content").val()) + "&chs=160x160&chld=L|0");
+  });
 });
