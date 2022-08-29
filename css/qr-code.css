@@ -31,7 +31,6 @@
 }
 .form input::placeholder{
   color: #999;
-  font-size: 17px;
 }
 .form button{
   color: #fff;
