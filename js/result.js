@@ -1,10 +1,10 @@
 var divination = [
-    "Menghitung grafik bintang",
-    "Membaca daun teh",
-    "Mengorbankan seekor kambing",
-    "Konsultasi kalender Maya",
-    "Memeriksa golongan darah",
-    "Menelusuri garis telapak tangan"
+    "Calculating star charts",
+    "Reading tea leafs",
+    "Sacrificing a goat",
+    "Consulting Mayan calenders",
+    "Checking blood types",
+    "Tracing palm lines"
 ];
 
 function rndMsg() {
@@ -79,9 +79,9 @@ $(document).ready(function() {
                                     name1 +
                                         " and " +
                                         name2 +
-                                        " memiliki <strong>" +
-                                        cinta +
-                                        "%</strong> peringkat kompatibilitas sampai sekarang."
+                                        " have a <strong>" +
+                                        love +
+                                        "%</strong> compatibility rating as of now."
                                 );
                                 $("#calculating").fadeOut(300, function() {
                                     $("#results").fadeIn(300, function() {
