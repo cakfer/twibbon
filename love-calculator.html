@@ -37,19 +37,29 @@
 <p>2. Klik Buat Kode QR</p>
 <p>3. Klik QR kode dan tahan dilayar ponselmu untuk 'Unduh' hasil kode QR atau klik kanan untuk komputer.</p>
 
-<p><img src="https://chart.googleapis.com/chart?cht=qr&chl=Ferry+Ayunda&chs=160x160&chld=L|0" class="qr-code"></p>
 <p>
-<!--
-<form>
--->
-<fieldset>
-<label>Ketik teks atau url untuk membuat kode QR.</label>
-<input type="text" id="content" placeholder="Masukkan teks atau url">
-</fieldset>
-<button type="submit" id="generate">Buat Kode QR</button></p>
-<!--
-</form>
--->
+<div id="wrapper"> 
+<div class="container card" id="initial-prompt">
+<h1>Calculate Your Love</h1>
+<p id="name1-label">Your name.</p>
+<input type="text" id="name1">
+<p id="name2-label">Your partner's name.</p>
+<input type="text" id="name2">
+<p id="warning">You must fill in both names.</p>
+<p class="align-right"><button id="calculate">Calculate &nbsp;&nbsp;<i class="fa fa-heart" aria-hidden="true"></i></button></p>
+</div>
+<div class="container" id="calculating">
+<div id="loading" class="material-spinner"></div>
+<p id="div-msg">&nbsp;</p>
+</div>
+<div class="container card" id="results">
+<h1>Your results!</h1>
+<p id="love-results">&nbsp;</p>
+<p>Don't like what you see? The future isn't set in stone, it is written in the stars! Just like the stars that drift through the night sky, you too can change the path of your future. If you believe hard enough, anything is possible. Check back later to see if you've improved your odds.</p>
+<p class="align-right"><button id="try-again">Try Again</button></p>
+</div>
+</div>
+</p>
 </article>
   
 <footer>
