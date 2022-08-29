@@ -14,7 +14,7 @@
   margin: 20px 0 25px;
 }
 .form :where(input, button){
-  width: 100%;
+  width: 100px;
   height: 55px;
   border: none;
   outline: none;
