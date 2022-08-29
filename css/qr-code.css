@@ -72,3 +72,9 @@ pre {
   overflow: auto;
   padding: 0.4em 0.8em;
 }
+
+.qr-code {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
