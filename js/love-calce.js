@@ -1,10 +1,10 @@
 var divination = [
-    "Calculating star charts",
-    "Reading tea leafs",
-    "Sacrificing a goat",
-    "Consulting Mayan calenders",
-    "Checking blood types",
-    "Tracing palm lines"
+    "Menghitung grafik bintang",
+    "Membaca daun teh",
+    "Mengorbankan seekor kambing",
+    "Konsultasi kalender Maya",
+    "Memeriksa golongan darah",
+    "Menelusuri garis telapak tangan"
 ];
 
 function rndMsg() {
