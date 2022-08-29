@@ -14,7 +14,7 @@ f.load().then(function() {
 });
 
 var face = new Image()
-// face.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/23596/face.png'
+face.src = 'https://raw.githubusercontent.com/cakfer/twibbon/main/img/image.png'
 
 var faceLoaded = false
 
