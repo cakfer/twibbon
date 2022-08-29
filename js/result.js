@@ -79,9 +79,9 @@ $(document).ready(function() {
                                     name1 +
                                         " and " +
                                         name2 +
-                                        " have a <strong>" +
-                                        love +
-                                        "%</strong> compatibility rating as of now."
+                                        " memiliki <strong>" +
+                                        cinta +
+                                        "%</strong> peringkat kompatibilitas sampai sekarang."
                                 );
                                 $("#calculating").fadeOut(300, function() {
                                     $("#results").fadeIn(300, function() {
