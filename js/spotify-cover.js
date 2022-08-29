@@ -98,7 +98,6 @@ c3.value = '#ad29c9'
 updateCover()
 
  var saveButton = document.querySelector('.save')
-
  saveButton.addEventListener('click', save)
 
 function save () {
