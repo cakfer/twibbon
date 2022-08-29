@@ -80,8 +80,8 @@ $(document).ready(function() {
                                         " and " +
                                         name2 +
                                         " have a <strong>" +
-                                        love +
-                                        "%</strong> compatibility rating as of now."
+                                        cinta +
+                                        "%</strong> peringkat kompatibilitas sampai sekarang."
                                 );
                                 $("#calculating").fadeOut(300, function() {
                                     $("#results").fadeIn(300, function() {
