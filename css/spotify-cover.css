@@ -40,7 +40,7 @@ canvas {
 }
 
 .file {
-  width: 100%;
+  width: 360px;
   font-family: sans-serif;
   padding: 1rem 0;
 }
@@ -58,6 +58,6 @@ canvas {
   width: 100%;
   font-size: 1rem;
   padding: .5rem;
-  width: 100%;
+  width: 360px;
 }
 
