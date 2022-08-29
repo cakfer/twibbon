@@ -31,12 +31,11 @@ canvas {
 
 .colorinput {
   flex: 1;
-  width: 50%;
+  width: 100%;
 }
 
 .textinput {
   font-size: 1.5rem;
-  padding-left: 1rem;
 }
 
 .file {
