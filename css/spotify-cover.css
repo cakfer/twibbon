@@ -26,12 +26,11 @@ canvas {
   flex: 1;
   flex-direction: column;
   display: flex;
-  padding-right: 0 1rem;
 }
 
 .colorinput {
   flex: 1;
-  width: 50%;
+  width: 100%;
 }
 
 .textinput {
