@@ -33,23 +33,28 @@
 <article>  
 <h1>QR Code Generator</h1>
 
-<p>1. Ketik teks atau url untuk membuat kode QR.</p>
-<p>2. Klik Buat Kode QR</p>
-<p>3. Klik QR kode dan tahan dilayar ponselmu untuk 'Unduh' hasil kode QR atau klik kanan untuk komputer.</p>
+<p><canvas height="720" width="720"></canvas></p>
 
-<p><img src="https://chart.googleapis.com/chart?cht=qr&chl=Ferry+Ayunda&chs=160x160&chld=L|0" class="qr-code"></p>
-<p>
-<!--
-<form>
--->
-<fieldset>
-<label>Ketik teks atau url untuk membuat kode QR.</label>
-<input type="text" id="content" placeholder="Masukkan teks atau url">
-</fieldset>
-<button type="submit" id="generate">Buat Kode QR</button></p>
-<!--
-</form>
--->
+<div class="settings">
+<div class="inputs">
+<div class="color">
+<input type="color" class="colorinput c1" />
+<input type="color" class="colorinput c2" />
+<input type="color" class="colorinput c3" />
+</div>
+<div class="text">
+<input type="text" class="textinput z1" />
+<input type="text" class="textinput z2" />
+<input type="text" class="textinput z3" />
+</div>
+</div>
+<div class="file">
+<div class="info">Custom BW image: </div>
+<small>uncomment line 17 in JS to see the effect</small>
+<input type="file" class="fileinput f1" />
+</div>
+<button class="save">Save</button> 
+</div>
 </article>
   
 <footer>
