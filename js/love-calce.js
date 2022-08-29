@@ -79,7 +79,7 @@ $(document).ready(function() {
                                     name1 +
                                         " and " +
                                         name2 +
-                                        " have a <strong>" +
+                                        " memiliki <strong>" +
                                         cinta +
                                         "%</strong> peringkat kompatibilitas sampai sekarang."
                                 );
