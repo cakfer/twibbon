@@ -14,7 +14,7 @@ f.load().then(function() {
 });
 
 var face = new Image()
-face.src = 'https://raw.githubusercontent.com/cakfer/twibbon/main/img/image.png'
+// face.src = 'https://raw.githubusercontent.com/cakfer/twibbon/main/img/image.png'
 
 var faceLoaded = false
 
