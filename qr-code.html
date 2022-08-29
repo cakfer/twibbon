@@ -18,7 +18,7 @@
     <!-- Css -->
     <link rel="stylesheet" href="css/default.css">
     <!-- Add plugins as you like -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/qr-code.css">
     <link rel="stylesheet" href="css/loading.css">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
@@ -31,30 +31,19 @@
 </div>
 
 <article>  
-<h1>Twibbon Generator</h1>
+<h1>QR Code Generator</h1>
 
-<p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
+<p>type text or url to create QR code.</p>
 
-<p>
-<img id="preview" src="img/preview.png"/>
-<img id="twibbon" src="img/twibbon.png" style="display: none"/>
-<canvas id="cakfer" style="width: 300px; height: 300px; display: none"></canvas>
-</p>
-
-<p>
-<input type="text" id="filename" autocomplete="off" readonly="" placeholder="Tidak ada file yang diunggah.">
-<br />
-<label for="fileInput" class="custom-file-upload">
-<i class="text-button"></i> <i class="far fa-images"></i>&nbsp; UNGGAH GAMBAR BARU
-<input id="fileInput" type="file" />
-</label>
-</p>
-
-<p>
-<a href="#" id="unduh" download="kela.pages.dev.png" style="display: none" class="button-3" role="button"><i class="fa fa-download"></i>&nbsp; UNDUH</a>
-<button id="klik" onclick="drawImage()" class="button-3" role="button"><i class="far fa-eye"></i>&nbsp; PRATINJAU</button> 
-<button id="cancel" onclick="location.reload()" class="button-4" role="button" style="color:red"><i class="fas fa-trash-alt"></i>&nbsp; HAPUS</button>
-</p>
+<div class="wrapper">
+<div class="form">
+<input type="text" spellcheck="false" placeholder="Enter text or url">
+<button>Create QR Code</button>
+</div>
+<div class="qr-code">
+<img src="" alt="qr-code">
+</div>
+</div>
 </article>
   
 <footer>
