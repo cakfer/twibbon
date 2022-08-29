@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.card {
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0px rgba(33,33,33,0.15), 0px 6px 10px 0px rgba(33,33,33,0.15);
+    font-family: "Arimo", sans-serif;
+    max-width: 400px;
+    width: 100%;
+}
+
+input[type=text] {
+    padding: 0;
+    line-height: 2;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+    border: 0px;
+    margin-bottom: 1px;
+    border-bottom: 1px #b0b0b0 solid;
+}
+
+input[type=text]:focus {
+    border-bottom: 2px #E91E63 solid;
+    margin-bottom: 0px;
+    transition: all 500ms ease;
+}
+
+button {
+    background: #E91E63;
+    color: white;
+    outline: none;  
+    font-family: "Arimo", sans-serif;
+    border: 0;
+    border-radius: 4px;
+    line-height: 2.5;
+    padding: 0 1em;
+    margin: 0;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px 0px rgba(33,33,33,0.15), 0px 6px 10px 0px rgba(33,33,33,0.15);
+    transition: all ease 500ms;
+    position: relative;
+}
+
+button:hover {
+    background: #FF3E83;
+    box-shadow: 0px 6px 10px 0px rgba(33,33,33,0.15), 0px 6px 10px 0px rgba(33,33,33,0.15);
+    top: -1px;
+}
+
+button:active {
+    top: 1px;
+    background: #C90043;
+}
+
+.align-right {
+    text-align: right;
+}
+
+#warning {
+    color: red;
+    opacity: 0;
+}
+
+#results {
+    display: none;
+}
+
+#calculating {
+    color: white;
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+}
+
+#loading {
+    margin: 0 auto;
+}
+
+.material-spinner {
+    /* The height and width can be
+    whatever you want, so long as
+    you adjust the border radius
+    to compensate. I added a 
+    "max-height" because for some
+    reason the spinner was
+    "squishing" when I resized the
+    screen vertically. "max-height"
+    fixed this. */
+    height: 50px;
+    min-height: 50px;
+    width: 50px;
+    /* "border-radius" defines how
+    much "curve" there is on the
+    edge of a square element. If
+    you give it enough curve, it
+    makes the element appear to be
+    circular. */
+    border-radius: 100px;
+    /* So there's a five pixel
+    transparent solid border
+    around a 50px square box, which
+    has edges curved so much that
+    it looks circular... */
+    border: 5px transparent solid;
+    /* ... with one side, the top
+    border, given a color. This
+    creates the quarter-circle 
+    curve. */
+    border-top: 5px #3F51B5 solid;
+    /* "animation" specifies an
+    animation to use on the element,
+    including how long the animation
+    should take, how many times it 
+    should play, and even whether 
+    or not it should ease into the
+    different steps of the animation.
+    By default the animation eases,
+    which is what we want for our
+    Google-esque spinner, so we 
+    don't need to set that. 
+    
+    The "material-spinner" part is
+    the name of the animation that 
+    we want to use. We could've
+    called it "funky-bunny" or
+    anything else so long as we 
+    use the same name when
+    specifying the keyframes. */
+    animation: material-spinner 4s infinite;
+}
+
+@keyframes material-spinner {
+    /* "material-spinner" is the name
+    of the animation. Each percentage
+    represents an individual step
+    in the animation. The transform
+    rotation needs to increase from
+    0 throughout. If you did 
+    "rotate(0deg)" then 
+    "rotate(180deg)" and then 
+    "rotate(0deg)" back again,
+    instead of continously spinning
+    right, it would spin right,
+    then left, then right.*/ 
+    0% {
+        transform: rotate(0deg);
+        border-top: 5px #CBFF74 solid;
+    }
+    25% {
+        transform: rotate(360deg);
+        border-top: 5px #E8B85F solid;
+    }
+    50% {
+        transform: rotate(720deg);
+        border-top: 5px #8D5EE8 solid;
+    }
+    75% {
+        transform: rotate(1080deg);
+        border-top: 5px #69EBFF solid;
+    }
+    100% {
+        transform: rotate(1440deg);
+        border-top: 5px #CBFF74 solid;
+    }
+}
+
+#calculating {
+    display: none;
+}
