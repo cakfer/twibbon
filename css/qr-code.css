@@ -1,75 +1,74 @@
-.wrapper{
-  height: 265px;
-  max-width: 100%;
-  background: #fff;
-  border-radius: 7px;
-  padding: 20px 25px 0;
-  transition: height 0.2s ease;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-.wrapper.active{
-  height: 530px;
-}
-.wrapper .form{
-  margin: 20px 0 25px;
-}
-.form :where(input, button){
-  width: 100%;
-  height: 55px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  transition: 0.1s ease;
-}
-.form input{
-  font-size: 17px;
-  padding: 0 17px;
-  border: 1px solid #999;
-}
-.form input:focus{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
-}
-.form input::placeholder{
-  color: #999;
-}
-.form button{
-  color: #fff;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 17px;
-  background: #ffb923;
-}
-.qr-code{
-  opacity: 0;
-  display: flex;
-  padding: 33px 0;
-  border-radius: 5px;
-  align-items: center;
-  pointer-events: none;
-  justify-content: center;
-  border: 1px solid #ccc;
-}
-.wrapper.active .qr-code{
-  opacity: 1;
-  pointer-events: auto;
-  transition: opacity 0.5s 0.05s ease;
-}
-.qr-code img{
-  width: 170px;
+:root {
+  --backgroundColor: #fdfdfd;
+  --textColor: #303030;
+  --secondaryTextColor: #404040;
+  --mutedTextColor: #707070;
+  --subtleBackgroundColor: #f0eeed;
+  --linkColor: #0463cb;
+  --borderColor: #ccc;
 }
 
-@media (max-width: 430px){
-  .wrapper{
-    height: 255px;
-    padding: 16px 20px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backgroundColor: #151615;
+    --textColor: #dbdfdf;
+    --secondaryTextColor: #cfd5d5;
+    --mutedTextColor: #b4b6b8;
+    --subtleBackgroundColor: #1e1e1e;
+    --linkColor: #6eb8ff;
+    --borderColor: #414141;
   }
-  .wrapper.active{
-    height: 510px;
-  }
-  .form :where(input, button){
-    height: 52px;
-  }
-  .qr-code img{
-    width: 160px;
-  }  
+}
+
+label {
+  display: block;
+}
+
+textarea,
+input {
+  margin: 0.4em 0;
+  padding: 0.8em;
+  background: var(--subtleBackgroundColor);
+  border: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 1em 0;
+}
+
+button, .button {
+  padding: 0.8em 1.6em;
+  background: var(--subtleBackgroundColor);
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button[type="submit"], .button\:type-submit {
+  background: var(--linkColor);
+  color: var(--backgroundColor);
+}
+
+code, pre, .code {
+  font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;  
+  font-size: 0.9em;
+}
+
+em {
+  color: var(--mutedTextColor);
+}
+
+blockquote {
+  background-color: var(--subtleBackgroundColor);
+  padding: 1em 1em 1em 2.5em;
+  margin: 0;
+}
+
+pre {
+  border: 1px solid var(--borderColor);
+  overflow: auto;
+  padding: 0.4em 0.8em;
 }
