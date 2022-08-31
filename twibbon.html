@@ -63,25 +63,45 @@
 </div>
 
 <article>  
-<h1>QR Code Generator</h1>
+<h1>Twibbon Generator</h1>
 
-<p>1. Ketik teks atau url untuk membuat kode QR.</p>
-<p>2. Klik Buat Kode QR</p>
-<p>3. Klik QR kode dan tahan dilayar ponselmu untuk 'Unduh' hasil kode QR atau klik kanan untuk komputer.</p>
+<p>Unggah karya seni Anda dengan latar belakang transparan sebagai File .PNG terpisah, dengan ukuran kurang dari 1 MB.</p>
+<p>Pilih file gambar dan bingkai dari komputer Anda.</p>
+<p>Anda dapat mengunggah berbagai ukuran gambar dari hard drive Anda.</p>
 
-<p><img src="https://chart.googleapis.com/chart?cht=qr&chl=Ferry+Ayunda&chs=160x160&chld=L|0" class="qr-code"></p>
+<p>Unggah Gambar:</p>
+<input class="input-file" type="file" accept="image/*" onchange="loadFile(event)">
+
+<p>Unggah Bingkai:</p>
+<input class="input-file" type='file' accept="image/*" onchange="loadTemplate(event)">
+
 <p>
-<!--
-<form>
--->
-<fieldset>
-<label>Ketik teks atau url untuk membuat kode QR.</label>
-<input type="text" id="content" placeholder="Masukkan teks atau url">
-</fieldset>
-<button type="submit" id="generate">Buat Kode QR</button></p>
-<!--
-</form>
--->
+<button onclick="gen()" class="button-3" role="button"><i class="far fa-eye"></i> PRATINJAU</button> 
+</p>
+
+<!-- Result -->
+<div id="custom-modal" class="custom-modal">
+<div class="custom-modal-dialog">
+<div class="custom-modal-content">
+<span class="close-modal">X</span>
+<div class="custom-modal-body">
+<div class="custom-modal-inner">
+<!-- Content here -->
+<h4>Well Done! </h4>
+
+<p>
+<img src="/img/preview.jpg" id="avatar" alt="Avatar" style="display: none"/>
+<img src="/img/preview.jpg" id="bingkai" alt="Bingkai" style="display: none"/>
+<canvas id="canvas"></canvas>
+</p>
+
+<p><button type="button" class="button-4" id="btndownload" style="color:blue"><i class="fa fa-download"></i> UNDUH</button>
+<button id="cancel" onclick="location.reload()" class="button-4" role="button" style="color:red"><i class="fas fa-trash-alt"></i> HAPUS</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
   
 <footer>
