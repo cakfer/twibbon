@@ -65,5 +65,5 @@ var loadFile = function(event) {
 
     var dwn = document.getElementById('btndownload');
         dwn.onclick = function(){
-        download(canvas, 'nesta.pages.dev.png');
+        download(canvas, 'kela.pages.dev.png');
     };
