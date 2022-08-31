@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.70;, maximum-scale=1.0, user-scalable=no">
+    <meta content="https://kela.pages.dev/img/og.png" property="og:image">
+    <meta content="QR Code Generator | Ferry Ayunda" property="og:title">
+    <meta content="https://kela.pages.dev/qr-code" property="og:url">
+    <meta name="description" content="Ketik teks atau url untuk membuat kode QR.">
+
+    <!-- Title of the page -->
+    <title>Twibbon Generator v.02</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- Add plugins as you like -->
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+    <style>
+    img,canvas{
+    width:100%;
+    height:auto;
+    }
+
+    .input-file{
+    background-color: #f8f9fc;
+    border: 1px solid #e2e9f3;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    color: #565A90;
+    }
+    .input-file::file-selector-button{
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #595ef1bd;
+    border: 1px solid #595ef1bd;
+    height: 40px;
+    cursor: pointer;
+    transition: all .25s ease-in;
+    cursor: pointer;
+    }
+    .input-file::file-selector-button:hover{
+    background-color: #fff;
+    color: #565A90;
+    transition: all .25s ease-in;
+    }
+    </style>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+<!-- Your content here -->
+<div id="preloader">
+<div id="status">&nbsp;</div>
+</div>
+
+<article>  
+<h1>QR Code Generator</h1>
+
+<p>1. Ketik teks atau url untuk membuat kode QR.</p>
+<p>2. Klik Buat Kode QR</p>
+<p>3. Klik QR kode dan tahan dilayar ponselmu untuk 'Unduh' hasil kode QR atau klik kanan untuk komputer.</p>
+
+<p><img src="https://chart.googleapis.com/chart?cht=qr&chl=Ferry+Ayunda&chs=160x160&chld=L|0" class="qr-code"></p>
+<p>
+<!--
+<form>
+-->
+<fieldset>
+<label>Ketik teks atau url untuk membuat kode QR.</label>
+<input type="text" id="content" placeholder="Masukkan teks atau url">
+</fieldset>
+<button type="submit" id="generate">Buat Kode QR</button></p>
+<!--
+</form>
+-->
+</article>
+  
+<footer>
+<p><a target="_blank" rel="noopener" href="https://www.facebook.com/bungferry.wa">Copyright © 2022 Ferry Ayunda.</a></p>
+</footer>
+
+<script src="js/apks.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/loading.js"></script>
+</body>
+</html>
